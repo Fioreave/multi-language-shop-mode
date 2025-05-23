@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
 export type Language = 'es' | 'en' | 'ca' | 'fr';
@@ -37,6 +36,10 @@ const translations = {
     "neverMissOut": "Never miss out",
     "joinNewsletter": "Join our newsletter for exclusive updates and offers",
     "emailPlaceholder": "Enter your email",
+    "newsletterPopup.title": "Join Our Newsletter!",
+    "newsletterPopup.description": "Subscribe to get 15% off your first purchase and stay updated with our latest news and offers.",
+    "newsletterPopup.emailPlaceholder": "Enter your email",
+    "newsletterPopup.subscribeButton": "Subscribe & Get 15% Off",
     "footer.company": "Company",
     "footer.shop": "Shop",
     "footer.support": "Support",
@@ -70,6 +73,10 @@ const translations = {
     "neverMissOut": "No te pierdas nada",
     "joinNewsletter": "Únete a nuestro boletín para actualizaciones y ofertas exclusivas",
     "emailPlaceholder": "Introduce tu email",
+    "newsletterPopup.title": "¡Únete a Nuestro Boletín!",
+    "newsletterPopup.description": "Suscríbete para obtener un 15% de descuento en tu primera compra y mantente al día con nuestras últimas noticias y ofertas.",
+    "newsletterPopup.emailPlaceholder": "Introduce tu email",
+    "newsletterPopup.subscribeButton": "Suscribirse y Obtener 15% Dto.",
     "footer.company": "Empresa",
     "footer.shop": "Tienda",
     "footer.support": "Soporte",
@@ -103,6 +110,10 @@ const translations = {
     "neverMissOut": "No et perdis res",
     "joinNewsletter": "Uneix-te al nostre butlletí per a actualitzacions i ofertes exclusives",
     "emailPlaceholder": "Introdueix el teu email",
+    "newsletterPopup.title": "Uneix-te al Nostre Butlletí!",
+    "newsletterPopup.description": "Subscriu-te per obtenir un 15% de descompte en la teva primera compra i estigues al dia amb les nostres últimes notícies i ofertes.",
+    "newsletterPopup.emailPlaceholder": "Introdueix el teu email",
+    "newsletterPopup.subscribeButton": "Subscriure's i Obtenir 15% Dte.",
     "footer.company": "Empresa",
     "footer.shop": "Botiga",
     "footer.support": "Suport",
@@ -136,6 +147,10 @@ const translations = {
     "neverMissOut": "Ne manquez rien",
     "joinNewsletter": "Rejoignez notre newsletter pour des mises à jour et des offres exclusives",
     "emailPlaceholder": "Entrez votre email",
+    "newsletterPopup.title": "Rejoignez Notre Newsletter!",
+    "newsletterPopup.description": "Abonnez-vous pour obtenir 15% de réduction sur votre premier achat et restez informé de nos dernières actualités et offres.",
+    "newsletterPopup.emailPlaceholder": "Entrez votre email",
+    "newsletterPopup.subscribeButton": "S'abonner et Obtenir 15% de Réduc",
     "footer.company": "Entreprise",
     "footer.shop": "Boutique",
     "footer.support": "Support",

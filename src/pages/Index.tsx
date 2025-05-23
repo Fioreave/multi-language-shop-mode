@@ -1,14 +1,27 @@
-
-import React from "react";
+import React, { useState, useEffect } from "react";
 import HeroSection from "../components/HeroSection";
 import FeaturedSection from "../components/FeaturedSection";
 import ColorSection from "../components/ColorSection";
+import NewsletterPopup from "../components/NewsletterPopup";
 import { getFeaturedProducts, getNewArrivals, getTrendingProducts } from "../data/products";
 import { useLanguage } from "../contexts/LanguageContext";
 
 const Index = () => {
   const { t } = useLanguage();
-  
+  const [showNewsletterPopup, setShowNewsletterPopup] = useState(false);
+
+  useEffect(() => {
+    // Logic to show popup only once per session or until dismissed
+    const popupDismissed = localStorage.getItem('newsletterPopupDismissed');
+    if (!popupDismissed) {
+      // Optionally, add a delay before showing the popup
+      const timer = setTimeout(() => {
+        setShowNewsletterPopup(true);
+      }, 2000); // Show after 2 seconds
+      return () => clearTimeout(timer);
+    }
+  }, []);
+
   return (
     <div className="min-h-screen">
       <HeroSection 
@@ -84,6 +97,12 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Newsletter Popup */}
+      <NewsletterPopup 
+        isOpen={showNewsletterPopup} 
+        onClose={() => setShowNewsletterPopup(false)} 
+      />
       
     </div>
   );
