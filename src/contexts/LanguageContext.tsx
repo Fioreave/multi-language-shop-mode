@@ -36,10 +36,10 @@ const translations = {
     "neverMissOut": "Never miss out",
     "joinNewsletter": "Join our newsletter for exclusive updates and offers",
     "emailPlaceholder": "Enter your email",
-    "newsletterPopup.title": "Join Our Newsletter!",
-    "newsletterPopup.description": "Subscribe to get 15% off your first purchase and stay updated with our latest news and offers.",
-    "newsletterPopup.emailPlaceholder": "Enter your email",
-    "newsletterPopup.subscribeButton": "Subscribe & Get 15% Off",
+    "newsletterPopup.title": "LIMITED TIME OFFER",
+    "newsletterPopup.description": "Sign up to our newsletter and save 10% off your next order.",
+    "newsletterPopup.emailPlaceholder": "Enter your email address",
+    "newsletterPopup.subscribeButton": "CONTINUE",
     "footer.company": "Company",
     "footer.shop": "Shop",
     "footer.support": "Support",
@@ -73,10 +73,10 @@ const translations = {
     "neverMissOut": "No te pierdas nada",
     "joinNewsletter": "Únete a nuestro boletín para actualizaciones y ofertas exclusivas",
     "emailPlaceholder": "Introduce tu email",
-    "newsletterPopup.title": "¡Únete a Nuestro Boletín!",
-    "newsletterPopup.description": "Suscríbete para obtener un 15% de descuento en tu primera compra y mantente al día con nuestras últimas noticias y ofertas.",
-    "newsletterPopup.emailPlaceholder": "Introduce tu email",
-    "newsletterPopup.subscribeButton": "Suscribirse y Obtener 15% Dto.",
+    "newsletterPopup.title": "OFERTA POR TIEMPO LIMITADO",
+    "newsletterPopup.description": "Suscríbete a nuestro boletín y ahorra un 10% en tu próximo pedido.",
+    "newsletterPopup.emailPlaceholder": "Introduce tu dirección de email",
+    "newsletterPopup.subscribeButton": "CONTINUAR",
     "footer.company": "Empresa",
     "footer.shop": "Tienda",
     "footer.support": "Soporte",
@@ -110,10 +110,10 @@ const translations = {
     "neverMissOut": "No et perdis res",
     "joinNewsletter": "Uneix-te al nostre butlletí per a actualitzacions i ofertes exclusives",
     "emailPlaceholder": "Introdueix el teu email",
-    "newsletterPopup.title": "Uneix-te al Nostre Butlletí!",
-    "newsletterPopup.description": "Subscriu-te per obtenir un 15% de descompte en la teva primera compra i estigues al dia amb les nostres últimes notícies i ofertes.",
-    "newsletterPopup.emailPlaceholder": "Introdueix el teu email",
-    "newsletterPopup.subscribeButton": "Subscriure's i Obtenir 15% Dte.",
+    "newsletterPopup.title": "OFERTA PER TEMPS LIMITAT",
+    "newsletterPopup.description": "Subscriu-te al nostre butlletí i estalvia un 10% en la teva propera comanda.",
+    "newsletterPopup.emailPlaceholder": "Introdueix la teva adreça d'email",
+    "newsletterPopup.subscribeButton": "CONTINUAR",
     "footer.company": "Empresa",
     "footer.shop": "Botiga",
     "footer.support": "Suport",
@@ -147,10 +147,10 @@ const translations = {
     "neverMissOut": "Ne manquez rien",
     "joinNewsletter": "Rejoignez notre newsletter pour des mises à jour et des offres exclusives",
     "emailPlaceholder": "Entrez votre email",
-    "newsletterPopup.title": "Rejoignez Notre Newsletter!",
-    "newsletterPopup.description": "Abonnez-vous pour obtenir 15% de réduction sur votre premier achat et restez informé de nos dernières actualités et offres.",
-    "newsletterPopup.emailPlaceholder": "Entrez votre email",
-    "newsletterPopup.subscribeButton": "S'abonner et Obtenir 15% de Réduc",
+    "newsletterPopup.title": "OFFRE À DURÉE LIMITÉE",
+    "newsletterPopup.description": "Inscrivez-vous à notre newsletter et économisez 10% sur votre prochaine commande.",
+    "newsletterPopup.emailPlaceholder": "Entrez votre adresse e-mail",
+    "newsletterPopup.subscribeButton": "CONTINUER",
     "footer.company": "Entreprise",
     "footer.shop": "Boutique",
     "footer.support": "Support",
@@ -177,8 +177,13 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   };
 
   const t = (key: string): string => {
-    const langData = translations[language];
-    return langData[key] || key;
+    const langTranslations = translations[language] || translations.en;
+    // Fallback to English if a key is missing in the current language
+    let translatedString = langTranslations[key];
+    if (!translatedString && language !== 'en') {
+      translatedString = translations.en[key];
+    }
+    return translatedString || key;
   };
 
   return (
