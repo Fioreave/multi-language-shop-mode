@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import HeroSection from "../components/HeroSection";
 import FeaturedSection from "../components/FeaturedSection";
@@ -25,7 +26,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <HeroSection 
-        title="THE STYLE THAT DEFINES YOU"
+        title="BEING YOU IS WHAT MAKES YOU BLOOM"
         subtitle="Discover our new collection"
         backgroundImage="https://source.unsplash.com/random/1920x1080/?fashion,model"
         buttonText="shopNow"
@@ -49,7 +50,7 @@ const Index = () => {
             <div className="absolute inset-0 bg-black bg-opacity-30"></div>
             <div className="relative z-10 text-center text-white">
               <h3 className="text-2xl font-medium mb-4">Women's Collection</h3>
-              <a href="/shop?category=women" className="shop-now-btn">
+              <a href="/shop?category=women" className="px-8 py-2 bg-brand-coral text-white hover:bg-brand-coral/90 transition-colors duration-200 text-sm tracking-wider uppercase">
                 {t('shopNow')}
               </a>
             </div>
@@ -63,7 +64,7 @@ const Index = () => {
             <div className="absolute inset-0 bg-black bg-opacity-30"></div>
             <div className="relative z-10 text-center text-white">
               <h3 className="text-2xl font-medium mb-4">Activewear Collection</h3>
-              <a href="/shop?category=activewear" className="shop-now-btn">
+              <a href="/shop?category=activewear" className="px-8 py-2 bg-brand-olive text-white hover:bg-brand-olive/90 transition-colors duration-200 text-sm tracking-wider uppercase">
                 {t('shopNow')}
               </a>
             </div>
