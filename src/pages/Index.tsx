@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import HeroSection from "../components/HeroSection";
 import FeaturedSection from "../components/FeaturedSection";
@@ -28,7 +27,7 @@ const Index = () => {
       <HeroSection 
         title="BEING YOU IS WHAT MAKES YOU BLOOM"
         subtitle="Discover our new collection"
-        backgroundImage="https://source.unsplash.com/random/1920x1080/?fashion,model"
+        backgroundImage="/lovable-uploads/adb0ce28-dfd6-4b30-8f7f-1e966ff83e03.png"
         buttonText="shopNow"
         buttonLink="/shop"
       />

@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useLanguage, type Language } from "../contexts/LanguageContext";
@@ -38,8 +37,8 @@ const Header = () => {
           </button>
 
           {/* Logo */}
-          <div className="text-2xl font-bold">
-            <Link to="/" className="font-bold font-aurora">YOUR LOGO HERE</Link>
+          <div className="text-3xl font-bold">
+            <Link to="/" className="font-aurora text-brand-pink hover:text-brand-pink/90">bloom</Link>
           </div>
 
           {/* Desktop Navigation */}
