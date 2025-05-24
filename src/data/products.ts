@@ -1,4 +1,3 @@
-
 export interface Product {
   id: number;
   name: string;
@@ -19,7 +18,7 @@ export const products: Product[] = [
     name: "Classic Top",
     price: 45.99,
     images: [
-      "https://source.unsplash.com/random/500x600/?fashion,top",
+      "/lovable-uploads/d01f6d18-d15b-4305-8799-38e670884c69.png", // Updated image
       "https://source.unsplash.com/random/500x600/?fashion,model"
     ],
     colors: ["#000000", "#eddada", "#e9e2d4"],
@@ -34,7 +33,7 @@ export const products: Product[] = [
     name: "Yoga Leggings",
     price: 59.99,
     images: [
-      "https://source.unsplash.com/random/500x600/?leggings",
+      "/lovable-uploads/bb565b07-1335-4711-a7eb-77e48eb7d1c8.png", // Updated image
       "https://source.unsplash.com/random/500x600/?yoga,pants"
     ],
     colors: ["#000000", "#69705e", "#cb8587"],
@@ -48,7 +47,7 @@ export const products: Product[] = [
     name: "Sports Bra",
     price: 34.99,
     images: [
-      "https://source.unsplash.com/random/500x600/?sportsbra",
+      "/lovable-uploads/20a1f742-0026-4a02-bfa3-bc56ab2874e2.png", // Updated image
       "https://source.unsplash.com/random/500x600/?activewear"
     ],
     colors: ["#000000", "#cb8587", "#ffffff"],

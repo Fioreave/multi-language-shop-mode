@@ -38,7 +38,7 @@ const Header = () => {
 
           {/* Logo */}
           <div className="text-3xl font-bold">
-            <Link to="/" className="font-aurora text-brand-pink hover:text-brand-pink/90">bloom</Link>
+            <Link to="/" className="font-aurora text-brand-coral hover:text-brand-coral/90">bloom</Link>
           </div>
 
           {/* Desktop Navigation */}
