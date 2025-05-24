@@ -49,7 +49,7 @@ const Index = () => {
             />
             <div className="absolute inset-0 bg-black bg-opacity-30"></div>
             <div className="relative z-10 text-center text-white">
-              <h3 className="text-2xl font-medium mb-4">Women's Collection</h3>
+              <h3 className="text-2xl font-medium mb-4 font-aurora">Women's Collection</h3>
               <a href="/shop?category=women" className="px-8 py-2 bg-brand-coral text-white hover:bg-brand-coral/90 transition-colors duration-200 text-sm tracking-wider uppercase">
                 {t('shopNow')}
               </a>
@@ -63,7 +63,7 @@ const Index = () => {
             />
             <div className="absolute inset-0 bg-black bg-opacity-30"></div>
             <div className="relative z-10 text-center text-white">
-              <h3 className="text-2xl font-medium mb-4">Activewear Collection</h3>
+              <h3 className="text-2xl font-medium mb-4 font-aurora">Activewear Collection</h3>
               <a href="/shop?category=activewear" className="px-8 py-2 bg-brand-olive text-white hover:bg-brand-olive/90 transition-colors duration-200 text-sm tracking-wider uppercase">
                 {t('shopNow')}
               </a>
@@ -82,7 +82,7 @@ const Index = () => {
       
       <section className="py-12 bg-brand-pink dark:bg-gray-800">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-medium mb-6">
+          <h2 className="text-3xl font-medium mb-6 font-aurora">
             #TRENDING NOW
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2">

@@ -39,7 +39,7 @@ const Header = () => {
 
           {/* Logo */}
           <div className="text-2xl font-bold">
-            <Link to="/" className="font-bold">BRAND</Link>
+            <Link to="/" className="font-bold font-aurora">YOUR LOGO HERE</Link>
           </div>
 
           {/* Desktop Navigation */}
