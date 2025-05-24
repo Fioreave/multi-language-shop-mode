@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useLanguage, type Language } from "../contexts/LanguageContext";
@@ -38,7 +39,9 @@ const Header = () => {
 
           {/* Logo */}
           <div className="text-3xl font-bold">
-            <Link to="/" className="font-aurora text-brand-coral hover:text-brand-coral/90">bloom</Link>
+            <Link to="/">
+              <img src="/lovable-uploads/1afbbc99-7d47-4c8f-ad16-2d6f058f2353.png" alt="bloom logo" className="h-8" />
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
